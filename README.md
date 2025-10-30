@@ -6,7 +6,7 @@ This is a Laravel 11 application, serving as a dedicated backend API. It manages
 
 To get the API running on your local machine, follow these steps.
 
-Prerequisites
+# Prerequisites
 
 Ensure you have the following installed on your system:
 
