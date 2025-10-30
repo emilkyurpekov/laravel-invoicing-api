@@ -1,62 +1,99 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Laravel Backend API Project
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+This is a Laravel 11 application, serving as a dedicated backend API. It manages core application data, including invoices and customer information, connecting to a MySQL database.
 
-## About Laravel
+Quick Start
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+To get the API running on your local machine, follow these steps.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Prerequisites
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Ensure you have the following installed on your system:
 
-## Learning Laravel
+PHP (>= 8.2 recommended): Laravel 11 requires PHP 8.2 or higher.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+Composer: For managing PHP dependencies.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+MySQL: Your database server.
 
-## Laravel Sponsors
+Node.js & npm (Optional): Only necessary if you plan to use Laravel's internal asset compilation (Vite) for any potential future views or dashboards.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Installation Instructions
 
-### Premium Partners
+Clone the Repository
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+If this project is in a repository, clone it to your local machine:
 
-## Contributing
+git clone [your-repository-url]
+cd [project-name]
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## Code of Conduct
+Install PHP Dependencies
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Use Composer to download all the necessary PHP packages:
 
-## Security Vulnerabilities
+composer install
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
+Set Up Environment File
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Copy the example environment file and create your local configuration:
+
+cp .env.example .env
+
+
+Configure .env
+
+Open the newly created .env file and update the following sections. Note that the default template might show SQLite settings; be sure to change these to your MySQL credentials:
+
+Set the application name and URL:
+
+APP_NAME="Laravel API"
+APP_URL=http://localhost:8000
+
+
+Configure MySQL database connection:
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=your_database_name
+DB_USERNAME=your_db_user
+DB_PASSWORD=your_db_password
+
+
+Generate Application Key
+
+This command sets the necessary encryption key for your application:
+
+php artisan key:generate
+
+
+Run Database Migrations and Seeding
+
+Set up the database tables and populate them with initial data (including the invoices table):
+
+php artisan migrate --seed
+
+
+Start the Local Server
+
+Launch the Laravel development server:
+
+php artisan serve
+
+
+The API should now be running at http://127.0.0.1:8000.
+
+Usage and Testing
+
+Accessing the API
+
+All API routes are prefixed with /api (routes are defined in routes/api.php). For example, if you have a route defined as /invoices, the full URL is:
+
+http://127.0.0.1:8000/api/invoices
+
+Use a tool like Postman or Insomnia to send GET, POST, PUT, and DELETE requests to your endpoints.
 
 ## Postman requests outcome
 <img width="898" height="678" alt="postman request specific ID" src="https://github.com/user-attachments/assets/73f06905-17c2-4f0d-a83b-5b1fb0834615" />
