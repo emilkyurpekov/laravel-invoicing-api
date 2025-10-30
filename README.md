@@ -18,7 +18,7 @@ MySQL: Your database server.
 
 Node.js & npm (Optional): Only necessary if you plan to use Laravel's internal asset compilation (Vite) for any potential future views or dashboards.
 
-Installation Instructions
+**Installation Instructions**
 
 Clone the Repository
 
@@ -28,21 +28,21 @@ git clone [your-repository-url]
 cd [project-name]
 
 
-Install PHP Dependencies
+**Install PHP Dependencies**
 
 Use Composer to download all the necessary PHP packages:
 
 composer install
 
 
-Set Up Environment File
+**Set Up Environment File**
 
 Copy the example environment file and create your local configuration:
 
 cp .env.example .env
 
 
-Configure .env
+**Configure .env**
 
 Open the newly created .env file and update the following sections. Note that the default template might show SQLite settings; be sure to change these to your MySQL credentials:
 
@@ -52,7 +52,7 @@ APP_NAME="Laravel API"
 APP_URL=http://localhost:8000
 
 
-Configure MySQL database connection:
+**Configure MySQL database connection:**
 
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -62,21 +62,21 @@ DB_USERNAME=your_db_user
 DB_PASSWORD=your_db_password
 
 
-Generate Application Key
+**Generate Application Key**
 
 This command sets the necessary encryption key for your application:
 
 php artisan key:generate
 
 
-Run Database Migrations and Seeding
+**Run Database Migrations and Seeding**
 
 Set up the database tables and populate them with initial data (including the invoices table):
 
 php artisan migrate --seed
 
 
-Start the Local Server
+**Start the Local Server**
 
 Launch the Laravel development server:
 
@@ -85,7 +85,7 @@ php artisan serve
 
 The API should now be running at http://127.0.0.1:8000.
 
-Usage and Testing
+**Usage and Testing**
 
 Accessing the API
 
