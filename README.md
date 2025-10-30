@@ -59,7 +59,9 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 ## Postman requests outcome
-<img width="899" height="732" alt="postman request" src="https://github.com/user-attachments/assets/19bfa453-3a7f-47ba-b0e1-c215f68fc2e9" />
-<img width="895" height="479" alt="post-request Postman" src="https://github.com/user-attachments/assets/0bcf8d34-3808-41d2-9fe3-c2c24a1de4e0" />
+<img width="898" height="678" alt="postman request specific ID" src="https://github.com/user-attachments/assets/73f06905-17c2-4f0d-a83b-5b1fb0834615" />
+<img width="899" height="732" alt="postman request" src="https://github.com/user-attachments/assets/84915970-bf03-4522-b605-d42be5ef807a" />
+<img width="895" height="479" alt="post-request Postman" src="https://github.com/user-attachments/assets/58ec5297-aa7e-4d71-8107-3f0a23bf5b9d" />
+<img width="877" height="679" alt="post invoices" src="https://github.com/user-attachments/assets/9bb31094-c71e-4566-9268-c5edf2717508" />
 
 
