@@ -2,7 +2,7 @@ Laravel Backend API Project
 
 This is a Laravel 11 application, serving as a dedicated backend API. It manages core application data, including invoices and customer information, connecting to a MySQL database.
 
-Quick Start
+**Installation Guide**
 
 To get the API running on your local machine, follow these steps.
 
