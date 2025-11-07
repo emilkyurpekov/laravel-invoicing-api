@@ -16,13 +16,9 @@ Composer: For managing PHP dependencies.
 
 MySQL: Your database server.
 
-Node.js & npm (Optional): Only necessary if you plan to use Laravel's internal asset compilation (Vite) for any potential future views or dashboards.
-
 **Installation Instructions**
 
 Clone the Repository
-
-If this project is in a repository, clone it to your local machine:
 
 git clone [your-repository-url]
 cd [project-name]
